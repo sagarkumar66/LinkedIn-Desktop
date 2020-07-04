@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LinkedIn</title>
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <script>
+        function dropdownCard() {
+            var visibile = document.querySelector(".dropdown-card").style.visibility;
+            if (document.querySelector(".dropdown-card").style.visibility === "hidden") {
+                document.querySelector(".dropdown-card").style.visibility = "visible";
+                document.querySelector(".container-fluid").style.opacity = "0";
+                document.querySelector(".light-color").style.opacity = "0";
+            } else {
+                document.querySelector(".dropdown-card").style.visibility = "hidden";
+                document.querySelector(".container-fluid").style.opacity = "1";
+                document.querySelector(".light-color").style.opacity = "1";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="row">
+            <div class="col-lg-4">
+                <a href="#">
+                    <img src="assets/LinkedIn-Icon-Square.png" width="35" height="35" alt="" class="logo">
+                </a>
+                <div class="nav-input-container">
+                    <form action="" class="nav-form">
+                        <i class="fas fa-search icon"></i>
+                        <input type="search" class="nav-input" placeholder="Search" name="search" id="nav-search">
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="active" href="#">
+                            <i class="fas fa-home"></i>
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fas fa-users"></i>
+                            <p>My Network</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fas fa-briefcase"></i>
+                            <p>Jobs</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="far fa-comments"></i>
+                            <p>Messaging</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="far fa-bell"></i>
+                            <p>Notifications</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="far fa-user-circle"></i>
+                            <button class="dropdown-btn" onclick="dropdownCard()">Me
+                                <i class="fas fa-caret-down"></i>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="nav-list2">
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class="fas fa-th"></i>
+                            <p>Work</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <p class="width-sm">Try Premium Free for 1 Month</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Navbar Dropdown Menu-->
+
+    <div class="dropdown-card" id="card1">
+        <img src="assets/user-icon.svg" alt="user-icon" height="60px" width="60px" class="user-icon">
+        <div class="details">
+            <h3>Sagar Prasad</h3><br>
+            <p>Student at Acharya Institutes</p>
+        </div>
+        <button class="card-button">View Profile</button>
+        <ul class="card-list">
+            <li class="card-item main-item">ACCOUNT</li>
+            <li class="card-item">Settings &amp; Privacy</li>
+            <li class="card-item">Help</li>
+            <li class="card-item">Language</li>
+            <li class="card-item main-item">MANAGE</li>
+            <li class="card-item">Posts &amp; Activity</li>
+            <li class="card-item">Job posting account</li>
+            <li class="card-item hr-line">
+                <hr>
+            </li>
+            <li class="card-item">Sign Out</li>
+        </ul>
+    </div>
+
+    <div class="container-fluid">
+        <h2 class="h2-text">Sagar, complete these steps to get the most out of LinkedIn:</h2>
+
+        <div class="card">
+            <img src="assets/dp.jpg" alt="card-img" class="card-img">
+            <h3>Add a photo to get recognized</h3>
+            <p>A picture helps you build your network.</p>
+            <button class="card-btn">Add Photo</button>
+        </div>
+        <div class="card">
+            <img src="assets/connection-circle.png" alt="card-img" class="card-img">
+            <h3>Build your network</h3>
+            <p>10 connections! 30’s a good start.</p>
+            <button class="card-btn">Keep connecting</button>
+        </div>
+        <div class="card">
+            <img src="assets/anonymous.jpg" alt="card-img" class="card-img">
+            <h3>Congratulate Sagar2</h3>
+            <p>Sagar2 recently had a work anniversary.</p>
+            <button class="card-btn btn2">Not now</button>
+            <button class="card-btn btn2">Say congrats</button>
+        </div>
+    </div>
+    <div class="container-fluid light-color">
+        <div class="row">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-6">
+                <div class="card card2">
+                    <h3>Pratibha Sharma, Abhik Sarkar and 73 other connections follow <span class="h3-bold">LinkedIn</span></h3>
+                    <span class="h3-icon">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </span>
+                    <hr>
+                    <img src="assets/linkedin-img.jpg" alt="linked-img" class="company-logo">
+                    <div class="details2">
+                        <h3>LinkedIn</h3><br>
+                        <p>12,107,962 followers</p>
+                        <p>Promoted</p>
+                    </div>
+                    <div class="details-ml">
+                        <p>+ Follow</p>
+                    </div>
+                    <p class="p-card">While many industries have been hit hard by COVID-19, some are on the rise. Here are ten roles that are in-demand today and the skills to help you land ... <a href="#"> see more</a></p>
+                    <img src="assets/assign.png" alt="company-img" class="img-fluid">
+                    <div class="social">
+                        <i class="far fa-thumbs-up circle-icon thumbsup-icon"></i>
+                        <i class="far fa-handshake circle-icon handshake-icon"></i>
+                        <i class="far fa-heart circle-icon heart-icon"></i>
+                        <p>729</p>
+                        <p>-11 comments</p>
+                    </div>
+                    <hr>
+                    <div class="social-activity row">
+                        <div class="col-lg-3">
+                            <i class="far fa-thumbs-up rotate-icon"></i>
+                            <span>Like</span>
+                        </div>
+                        <div class="col-lg-3">
+                            <i class="fas fa-comment-alt rotate-icon"></i>
+                            <span>Comment</span>
+                        </div>
+                        <div class="col-lg-3">
+                            <i class="fas fa-share-alt"></i>
+                            <span>Share</span>
+                        </div>
+                        <div class="col-lg-3">
+                            <i class="far fa-paper-plane"></i>
+                            <span>Send</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
